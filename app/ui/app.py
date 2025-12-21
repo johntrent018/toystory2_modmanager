@@ -2,7 +2,7 @@
 import tkinter as tk
 from tkinter import ttk
 # Importation de composants
-from app.ui.tabs import HomeTab, TutorialTab, SettingsTab
+from app.ui.tabs import HomeTab, TutorialTab, SettingsTab, AboutTab
 # Importations tierces
 from app.utils.helpers import resource_path
 
@@ -33,11 +33,13 @@ class App(tk.Tk):
         self.home = HomeTab(self.notebook, lang)
         self.tutorial = TutorialTab(self.notebook, lang)
         self.settings = SettingsTab(self.notebook, lang, prefs)
+        self.about = AboutTab(self.notebook, lang)
 
         # Ajout des onglets au Notebook
         self.notebook.add(self.home)
         self.notebook.add(self.tutorial)
         self.notebook.add(self.settings)
+        self.notebook.add(self.about)
 
         # Méthode de rafraîchissement de l'interface (design pattern : Observer)
         # afin de permettre au bouton de sauvegarde de la langue (onglet des paramètres)
@@ -48,6 +50,7 @@ class App(tk.Tk):
             self.notebook.tab(self.home, text=lang.translate("tab.home"))
             self.notebook.tab(self.tutorial, text=lang.translate("tab.tutorial"))
             self.notebook.tab(self.settings, text=lang.translate("tab.settings"))
+            self.notebook.tab(self.about, text=lang.translate("tab.about"))
 
         lang.register(refresh)
         refresh()

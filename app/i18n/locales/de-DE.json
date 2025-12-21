@@ -11,8 +11,16 @@
   "tab.home": "Liste der Mods",
   "tab.tutorial": "Tutorial",
   "tab.settings": "Hilfe und Tutorial",
+  "tab.about": "Über diese Anwendung",
   "home.label": "Dies ist die Liste der Mods für das Spiel.",
   "tutorial.label": "Dies ist die Anleitung zur Verwendung dieser Anwendung.",
   "settings.language": "Sprache",
-  "settings.apply": "Anwenden"
+  "settings.apply": "Anwenden",
+  "tab.about.createdby_text": "Entwickelt von John Trent (@johntrent018).",
+  "tab.about.createdby_link": "https://github.com/johntrent018/toystory2_modmanager",
+  "tab.about.thanksDiscord_text": "Besonderer Dank gilt der Toy Story 2-Community auf Discord.",
+  "tab.about.thanksDiscord_link": "https://discord.gg/Wsgcu2CH",
+  "tab.about.license_text": "Öffentliche Lizenz GNU GPL v3",
+  "tab.about.license_description": "Es steht Ihnen frei, jede modifizierte Version dieser Anwendung zu verbreiten, unabhängig davon, ob Sie sie kommerziell nutzen oder nicht. Wenn Sie dies tun, muss Ihre modifizierte Version jedoch selbst die GNU GPL v3-Lizenz beibehalten, um die Freiheiten der Informatik (ein wesentliches Prinzip des Copyleft) weiterhin zu gewährleisten. Weitere Informationen finden Sie auf dieser Website:",
+  "tab.about.license_link": "https://www.gnu.org/licenses/gpl-3.0.de.html"
 }
