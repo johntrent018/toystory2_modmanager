@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "code": "de-DE",
+    "name": {
+      "fr-FR": "Allemand",
+      "en-GB": "German",
+      "de-DE": "Deutsch"
+    }
+  },
+  "app.title": "Mod-Manager für Toy Story 2 (PC)",
+  "tab.home": "Liste der Mods",
+  "tab.tutorial": "Tutorial",
+  "tab.settings": "Hilfe und Tutorial",
+  "home.label": "Dies ist die Liste der Mods für das Spiel.",
+  "tutorial.label": "Dies ist die Anleitung zur Verwendung dieser Anwendung.",
+  "settings.language": "Sprache",
+  "settings.apply": "Anwenden"
+}
