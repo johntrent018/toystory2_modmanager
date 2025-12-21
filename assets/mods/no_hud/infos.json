@@ -1,0 +1,45 @@
+{
+    "id": "no_hud",
+    "creator": {
+        "name": "johntrent018",
+        "link": "https://github.com/johntrent018/toystory2_modmanager"
+    },
+    "created_date": "1970-01-01",
+    "latest_version": "1.7",
+    "default_name": "No HUD",
+    "default_description": "This mod clears the entire HUD. Be sure to remember how many items of different types you collect in the level!",
+    "translations": {
+        "en": {
+            "name": "No HUD",
+            "description": "This mod clears the entire HUD. Be sure to remember how many items of different types you collect in the level!"
+        },
+        "fr": {
+            "name": "Zéro ATH",
+            "description": "Ce mod efface l'ATH complet. Attention à bien mémoriser combien d'objets de différents types vous ramassez dans le niveau !"
+        },
+        "de": {
+            "name": "Kein HUD",
+            "description": "Dieser Mod löscht das gesamte HUD. Merken Sie sich gut, wie viele Objekte verschiedener Art Sie im Level einsammeln!"
+        },
+        "es": {
+            "name": "Sin HUD",
+            "description": "Este mod elimina por completo el HUD. ¡Asegúrate de recordar cuántos objetos de diferentes tipos recoges en el nivel!"
+        },
+        "es-latin": {
+            "name": "Sin HUD",
+            "description": "Este mod elimina por completo el HUD. ¡Asegúrate de recordar cuántos objetos de diferentes tipos recoges en el nivel!"
+        },
+        "pt": {
+            "name": "Sem HUD",
+            "description": "Este mod apaga completamente o HUD. Lembre-se de memorizar quantos objetos de diferentes tipos você recolhe no nível!"
+        },
+        "pl": {
+            "name": "Brak HUD",
+            "description": "Ten mod usuwa cały HUD. Pamiętaj, aby zapamiętać, ile przedmiotów różnych typów zbierasz na danym poziomie!"
+        },
+        "ru": {
+            "name": "Без HUD",
+            "description": "Этот мод полностью удаляет HUD. Не забудьте запомнить, сколько предметов разных типов вы собираете на уровне!"
+        }
+    }
+}

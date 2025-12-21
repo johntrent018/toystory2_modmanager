@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "code": "en-GB",
+    "name": {
+      "fr-FR": "Anglais",
+      "en-GB": "English",
+      "de-DE": "Englisch"
+    }
+  },
+  "app.title": "Mod manager for Toy Story 2 (PC)",
+  "tab.modlist": "Mods list",
+  "tab.createmod": "Create a mod",
+  "tab.tutorial": "Help and tutorial",
+  "tab.settings": "Settings",
+  "tab.about": "About this app",
+  "modlist.label": "This is the list of mods for the game.",
+  "createmod.label": "This interface will be used to easily assemble a mod.",
+  "tutorial.label": "This is the tutorial for using this application.",
+  "settings.language": "Language",
+  "settings.apply": "Apply",
+  "tab.about.createdby_text": "Application developed by John Trent (@johntrent018).",
+  "tab.about.createdby_link": "https://github.com/johntrent018/toystory2_modmanager",
+  "tab.about.thanksDiscord_text": "Special thanks to the Toy Story 2 Discord community.",
+  "tab.about.thanksDiscord_link": "https://discord.gg/Wsgcu2CH",
+  "tab.about.license_text": "Public license GNU GPL v3",
+  "tab.about.license_description": "You are free to distribute any modified version of this application, regardless of commercial use, but if you do so, your modified version must itself retain the GNU GPL v3 licence in order to continue to uphold computer freedoms (an essential principle of copyleft). More information is available on this website:",
+  "tab.about.license_link": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+}
