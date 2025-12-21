@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 from preferences import Preferences
 
-class TutorialTab(ttk.Frame):
+class HelpTab(ttk.Frame):
     def __init__(self, parent, lang):
         super().__init__(parent)
         self.label = ttk.Label(self)
