@@ -2,7 +2,7 @@
 import tkinter as tk
 from tkinter import ttk
 # Importation de composants
-from app.ui.tabs import HomeTab, TutorialTab, SettingsTab, AboutTab
+from app.ui.tabs import ModListTab, TutorialTab, SettingsTab, AboutTab
 # Importations tierces
 from app.utils.helpers import resource_path
 
@@ -30,7 +30,7 @@ class App(tk.Tk):
         self.notebook.pack(fill="both", expand=True)
 
         # Création des onglets du Notebook
-        self.home = HomeTab(self.notebook, lang)
+        self.home = ModListTab(self.notebook, lang)
         self.tutorial = TutorialTab(self.notebook, lang)
         self.settings = SettingsTab(self.notebook, lang, prefs)
         self.about = AboutTab(self.notebook, lang)
@@ -47,7 +47,7 @@ class App(tk.Tk):
         # afin de rafraîchir le texte.
         def refresh():
             self.title(lang.translate("app.title"))
-            self.notebook.tab(self.home, text=lang.translate("tab.home"))
+            self.notebook.tab(self.home, text=lang.translate("tab.modlist"))
             self.notebook.tab(self.tutorial, text=lang.translate("tab.tutorial"))
             self.notebook.tab(self.settings, text=lang.translate("tab.settings"))
             self.notebook.tab(self.about, text=lang.translate("tab.about"))

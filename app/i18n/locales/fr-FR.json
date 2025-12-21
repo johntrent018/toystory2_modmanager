@@ -8,11 +8,11 @@
     }
   },
   "app.title": "Gestionnaire de mods pour Toy Story 2 (PC)",
-  "tab.home": "Liste des mods",
+  "tab.modlist": "Liste des mods",
   "tab.tutorial": "Tutoriel",
   "tab.settings": "Paramètres",
   "tab.about": "À propos",
-  "home.label": "Ceci est la liste des mods pour le jeu.",
+  "modlist.label": "Ceci est la liste des mods pour le jeu.",
   "tutorial.label": "Ceci est le tutoriel pour utiliser cette application.",
   "settings.language": "Langue",
   "settings.apply": "Appliquer",

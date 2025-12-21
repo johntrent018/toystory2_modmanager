@@ -8,11 +8,11 @@
     }
   },
   "app.title": "Mod manager for Toy Story 2 (PC)",
-  "tab.home": "Mods list",
+  "tab.modlist": "Mods list",
   "tab.tutorial": "Help and tutorial",
   "tab.settings": "Settings",
   "tab.about": "About this app",
-  "home.label": "This is the list of mods for the game.",
+  "modlist.label": "This is the list of mods for the game.",
   "tutorial.label": "This is the tutorial for using this application.",
   "settings.language": "Language",
   "settings.apply": "Apply",
