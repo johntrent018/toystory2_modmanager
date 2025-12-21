@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "code": "fr-FR",
+    "name": {
+      "fr-FR": "Français",
+      "en-GB": "French",
+      "de-DE": "Franzözisch"
+    }
+  },
+  "app.title": "Gestionnaire de mods pour Toy Story 2 (PC)",
+  "tab.home": "Liste des mods",
+  "tab.tutorial": "Tutoriel",
+  "tab.settings": "Paramètres",
+  "home.label": "Ceci est la liste des mods pour le jeu.",
+  "tutorial.label": "Ceci est le tutoriel pour utiliser cette application.",
+  "settings.language": "Langue",
+  "settings.apply": "Appliquer"
+}
