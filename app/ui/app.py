@@ -2,7 +2,10 @@
 import tkinter as tk
 from tkinter import ttk
 # Importation de composants
-from app.ui.tabs import ModListTab, TutorialTab, SettingsTab, AboutTab
+from app.ui.tab_modlist import ModListTab
+from app.ui.tab_help import TutorialTab
+from app.ui.tab_settings import SettingsTab
+from app.ui.tab_about import AboutTab
 # Importations tierces
 from app.utils.helpers import resource_path
 
