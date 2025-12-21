@@ -34,14 +34,14 @@ class App(tk.Tk):
         self.notebook.pack(fill="both", expand=True)
 
         # Création des onglets du Notebook
-        self.home = ModListTab(self.notebook, lang)
+        self.modlist = ModListTab(self.notebook, lang)
         self.createmod = CreateModTab(self.notebook, lang)
         self.tutorial = HelpTab(self.notebook, lang)
         self.settings = SettingsTab(self.notebook, lang, prefs)
         self.about = AboutTab(self.notebook, lang)
 
         # Ajout des onglets au Notebook
-        self.notebook.add(self.home)
+        self.notebook.add(self.modlist)
         self.notebook.add(self.createmod)
         self.notebook.add(self.tutorial)
         self.notebook.add(self.settings)
@@ -53,7 +53,7 @@ class App(tk.Tk):
         # afin de rafraîchir le texte.
         def refresh():
             self.title(lang.translate("app.title"))
-            self.notebook.tab(self.home, text=lang.translate("tab.modlist"))
+            self.notebook.tab(self.modlist, text=lang.translate("tab.modlist"))
             self.notebook.tab(self.createmod, text=lang.translate("tab.createmod"))
             self.notebook.tab(self.tutorial, text=lang.translate("tab.tutorial"))
             self.notebook.tab(self.settings, text=lang.translate("tab.settings"))
