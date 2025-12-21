@@ -23,7 +23,7 @@ class App(tk.Tk):
             self.iconbitmap(resource_path("assets/toy2.ico"))
         except Exception:
             pass
-        self.minsize(1280, 720)
+        self.minsize(640, 480)
 
         # Création du Notebook
         self.notebook = ttk.Notebook(self)
