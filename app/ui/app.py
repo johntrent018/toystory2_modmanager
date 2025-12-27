@@ -27,6 +27,8 @@ class App(tk.Tk):
             self.iconbitmap(resource_path("assets/toy2.ico"))
         except Exception:
             pass
+
+        # Taille minimale de la fenêtre
         self.minsize(640, 480)
 
         # Création du Notebook
