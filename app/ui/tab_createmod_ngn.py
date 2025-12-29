@@ -19,7 +19,7 @@ class CreateNGNModTab(ttk.Frame):
         # d'appeler la méthode refresh() dans l'app et dans chaque onglet du Notebook
         # afin de rafraîchir le texte.
         def refresh():
-            self.label.config(text=lang.translate("tab.createmod.ngn_levels.label"))
+            self.label.config(text=lang.translate("app_data.tabs.create_mod.sub_tabs.ngn.h1"))
 
         lang.register(refresh)
         refresh()

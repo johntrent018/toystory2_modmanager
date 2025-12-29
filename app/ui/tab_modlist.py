@@ -9,7 +9,7 @@ class ModListTab(ttk.Frame):
         self.label.pack(padx=20, pady=20)
 
         def refresh():
-            self.label.config(text=lang.translate("modlist.label"))
+            self.label.config(text="Texte en dur : aucune chaîne de caractère associée n'existe pour le moment car les deux-sous onglets n'existent pas encore et existeront à l'avenir dans une branche git 'mods_list'.", wraplength=400)
 
         lang.register(refresh)
         refresh()

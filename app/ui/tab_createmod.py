@@ -30,8 +30,8 @@ class CreateModTab(ttk.Frame):
         # afin de rafraîchir le texte.
 
         def refresh():
-            self.createmod_notebook.tab(self.createmod_ngn, text=lang.translate("tab.createmod.ngn_levels"))
-            self.createmod_notebook.tab(self.createmod_music, text=lang.translate("tab.createmod.music_sfx"))
+            self.createmod_notebook.tab(self.createmod_ngn, text=lang.translate("app_data.tabs.create_mod.sub_tabs.ngn.tab_title"))
+            self.createmod_notebook.tab(self.createmod_music, text=lang.translate("app_data.tabs.create_mod.sub_tabs.music_sfx.tab_title"))
         
         lang.register(refresh)
         refresh()

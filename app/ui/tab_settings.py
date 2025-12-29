@@ -24,15 +24,15 @@ class SettingsTab(ttk.Frame):
         self.button.grid(row=1, column=0, columnspan=2, pady=10)
 
         def refresh():
-            self.label.config(text=lang.translate("settings.language"))
-            self.button.config(text=lang.translate("settings.apply"))
+            self.label.config(text=lang.translate("app_data.tabs.settings.chooseLang_label"))
+            self.button.config(text=lang.translate("app_data.widgets_terms.apply_btn"))
 
             values = [
                 lang.language_name(code)
                 for code in lang.available_languages()
             ]
             self.combo["values"] = values
-            self.selected.set(lang.language_name(lang.lang))
+            self.selected.set(lang.language_name(lang.current_lang))
 
         lang.register(refresh)
         refresh()

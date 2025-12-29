@@ -54,12 +54,12 @@ class App(tk.Tk):
         # d'appeler la méthode refresh() dans l'app et dans chaque onglet du Notebook
         # afin de rafraîchir le texte.
         def refresh():
-            self.title(lang.translate("app.title"))
-            self.notebook.tab(self.modlist, text=lang.translate("tab.modlist"))
-            self.notebook.tab(self.createmod, text=lang.translate("tab.createmod"))
-            self.notebook.tab(self.tutorial, text=lang.translate("tab.tutorial"))
-            self.notebook.tab(self.settings, text=lang.translate("tab.settings"))
-            self.notebook.tab(self.about, text=lang.translate("tab.about"))
+            self.title(lang.translate("app_data.app_title"))
+            self.notebook.tab(self.modlist, text=lang.translate("app_data.tabs.mods_list.tab_title"))
+            self.notebook.tab(self.createmod, text=lang.translate("app_data.tabs.create_mod.tab_title"))
+            self.notebook.tab(self.tutorial, text=lang.translate("app_data.tabs.help_tuto.tab_title"))
+            self.notebook.tab(self.settings, text=lang.translate("app_data.tabs.settings.tab_title"))
+            self.notebook.tab(self.about, text=lang.translate("app_data.tabs.about.tab_title"))
 
         lang.register(refresh)
         refresh()

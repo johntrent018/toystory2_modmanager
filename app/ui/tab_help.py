@@ -9,7 +9,7 @@ class HelpTab(ttk.Frame):
         self.label.pack(padx=20, pady=20)
 
         def refresh():
-            self.label.config(text=lang.translate("tutorial.label"))
+            self.label.config(text=lang.translate("app_data.tabs.help_tuto.h1"))
 
         lang.register(refresh)
         refresh()
