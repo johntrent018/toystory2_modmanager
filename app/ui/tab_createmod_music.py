@@ -34,53 +34,91 @@ class CreateMusicModTab(ttk.Frame):
         
         ## Fin de la première Frame
 
-        self.fichiersContent_text = ttk.Label(self)
-        self.fichiersContent_text.pack(padx=10, pady=10)
+        # self.fichiersContent_text = ttk.Label(self)
+        # self.fichiersContent_text.pack(padx=10, pady=10)
 
         # Ajout des widgets d'envoi de fichiers dans une seconde Frame
 
         fichiersContent = ttk.Frame(self)
         fichiersContent.pack(fill="both", padx=10, pady=10)
 
+        # Treeview des fichiers des musiques, sons et effets spéciaux présents dans le dossiers assets/mods/music_sfx/_vanilla
+
+        self.tree = ttk.Treeview(
+            fichiersContent,
+            columns=("filename", "status"),
+            show="tree headings",
+            selectmode="browse"
+        )
+
+        self.tree.heading("#0", text="Nom")
+        self.tree.heading("filename", text="Fichier")
+        self.tree.heading("status", text="État")
+
+        self.tree.column("#0", width=220)
+        self.tree.column("filename", width=180)
+        self.tree.column("status", width=80, anchor="center")
+
+        lvl1 = self.tree.insert("", "end", text="Niveau 1", open=True)
+
+        self.tree.insert(
+            lvl1,
+            "end",
+            iid="music_lvl1_intro",
+            text="Musique d’introduction",
+            values=("intro.wav", "✔ Base")
+        )
+
+        self.tree.pack()
+
+
+
+
+
+
+
+
+
+
         ## Voir pour optimiser ça pour un code plus propre.
         ## Pour chaque niveau, on créé un bouton d'upload de fichier
 
-        liste_niveaux = lang.translate("game.levels.names")
-        print(liste_niveaux[0])
+        liste_niveaux = lang.translate("game_data.levels_names")
+        # print(liste_niveaux[0])
 
-        self.lvl1_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl1_uploadwav_btn.grid(row=0, column=0, padx=10, pady=10)
-        self.lvl2_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl2_uploadwav_btn.grid(row=1, column=0, padx=10, pady=10)
-        self.lvl3_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl3_uploadwav_btn.grid(row=2, column=0, padx=10, pady=10)
-        self.lvl4_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl4_uploadwav_btn.grid(row=3, column=0, padx=10, pady=10)
-        self.lvl5_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl5_uploadwav_btn.grid(row=4, column=0, padx=10, pady=10)
-        self.lvl6_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl6_uploadwav_btn.grid(row=5, column=0, padx=10, pady=10)
-        self.lvl7_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl7_uploadwav_btn.grid(row=6, column=0, padx=10, pady=10)
-        self.lvl8_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl8_uploadwav_btn.grid(row=7, column=0, padx=10, pady=10)
-        self.lvl9_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl9_uploadwav_btn.grid(row=8, column=0, padx=10, pady=10)
-        self.lvl10_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl10_uploadwav_btn.grid(row=9, column=0, padx=10, pady=10)
-        self.lvl11_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl11_uploadwav_btn.grid(row=10, column=0, padx=10, pady=10)
-        self.lvl12_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl12_uploadwav_btn.grid(row=11, column=0, padx=10, pady=10)
-        self.lvl13_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl13_uploadwav_btn.grid(row=12, column=0, padx=10, pady=10)
-        self.lvl14_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl14_uploadwav_btn.grid(row=13, column=0, padx=10, pady=10)
-        self.lvl15_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
-        self.lvl15_uploadwav_btn.grid(row=14, column=0, padx=10, pady=10)
+        # self.lvl1_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl1_uploadwav_btn.grid(row=0, column=0, padx=10, pady=10)
+        # self.lvl2_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl2_uploadwav_btn.grid(row=1, column=0, padx=10, pady=10)
+        # self.lvl3_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl3_uploadwav_btn.grid(row=2, column=0, padx=10, pady=10)
+        # self.lvl4_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl4_uploadwav_btn.grid(row=3, column=0, padx=10, pady=10)
+        # self.lvl5_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl5_uploadwav_btn.grid(row=4, column=0, padx=10, pady=10)
+        # self.lvl6_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl6_uploadwav_btn.grid(row=5, column=0, padx=10, pady=10)
+        # self.lvl7_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl7_uploadwav_btn.grid(row=6, column=0, padx=10, pady=10)
+        # self.lvl8_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl8_uploadwav_btn.grid(row=7, column=0, padx=10, pady=10)
+        # self.lvl9_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl9_uploadwav_btn.grid(row=8, column=0, padx=10, pady=10)
+        # self.lvl10_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl10_uploadwav_btn.grid(row=9, column=0, padx=10, pady=10)
+        # self.lvl11_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl11_uploadwav_btn.grid(row=10, column=0, padx=10, pady=10)
+        # self.lvl12_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl12_uploadwav_btn.grid(row=11, column=0, padx=10, pady=10)
+        # self.lvl13_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl13_uploadwav_btn.grid(row=12, column=0, padx=10, pady=10)
+        # self.lvl14_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl14_uploadwav_btn.grid(row=13, column=0, padx=10, pady=10)
+        # self.lvl15_uploadwav_btn = tk.Button(fichiersContent, command=self.uploadwavfile)
+        # self.lvl15_uploadwav_btn.grid(row=14, column=0, padx=10, pady=10)
 
-        self.createMod_btn = tk.Button(self, command=self.uploadwavfile)
-        self.createMod_btn.pack(padx=10, pady=10)
+        # self.createMod_btn = tk.Button(self, command=self.uploadwavfile)
+        # self.createMod_btn.pack(padx=10, pady=10)
 
         # Méthode de rafraîchissement de l'interface (design pattern : Observer)
         # afin de permettre au bouton de sauvegarde de la langue (onglet des paramètres)
@@ -94,17 +132,17 @@ class CreateMusicModTab(ttk.Frame):
             self.enterModName_text.config(text=lang.translate(strings["inputName_label"]))
             self.enterModAuthor_text.config(text=lang.translate(strings["inputAuthor_label"]))
             self.enterModDescription_text.config(text=lang.translate(strings["inputDescription_label"]))
-            self.fichiersContent_text.config(text=lang.translate(strings["fichiersMod_label"]), wraplength=400)
-            self.createMod_btn.config(text=lang.translate(strings["createMod_btn"]))
+            # self.fichiersContent_text.config(text=lang.translate(strings["fichiersMod_label"]), wraplength=400)
+            # self.createMod_btn.config(text=lang.translate(strings["createMod_btn"]))
             # On récupère les strings des noms des niveaux
             levelsNamesStrings = lang.translate("game_data.levels_names")
-            for i in range(0, 15):
-                btn = getattr(self, f"lvl{i+1}_uploadwav_btn")
-                btn.config(text=lang.translate(levelsNamesStrings[i]))
+            # for i in range(0, 15):
+            #     btn = getattr(self, f"lvl{i+1}_uploadwav_btn")
+            #     btn.config(text=lang.translate(levelsNamesStrings[i]))
 
         lang.register(refresh)
         refresh()
 
     def uploadwavfile(self):
         filename = filedialog.askopenfilename()
-        print('Selected:', filename)
+        # print('Selected:', filename)
