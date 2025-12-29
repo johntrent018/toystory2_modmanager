@@ -1,53 +1,88 @@
 {
-	"meta": {
-		"code": "fr-FR",
-		"name": {
-			"fr-FR": "Français",
-			"en-GB": "French",
-			"de-DE": "Franzözisch"
-		}
-	},
-	"app.title": "Gestionnaire de mods pour Toy Story 2 (PC)",
-	"tab.modlist": "Liste des mods",
-	"tab.createmod": "Créer un mod",
-	"tab.createmod.ngn_levels": "Niveaux NGN",
-	"tab.createmod.ngn_levels.label": "Interface de création de mod de niveaux NGN",
-	"tab.createmod.music_sfx": "Musiques / Sons",
-	"tab.createmod.music_sfx.label": "Interface de création de mod de musiques et SFX",
-	"tab.createmod.music_sfx.infosLabel": "Saisissez les informations de base de votre mod :",
-	"tab.createmod.music_sfx.enterModName": "Nom :",
-	"tab.createmod.music_sfx.enterModAuthor": "Auteur :",
-	"tab.createmod.music_sfx.enterModDescription": "Description :",
-	"tab.createmod.music_sfx.fichiersLabel": "Cliquez sur le bouton associé à un niveau pour uploader la musique personnalisée (au moins un niveau, format .wav obligatoire) :",
-	"tab.createmod.music_sfx.createmodBtn": "Créer le mod",
-	"tab.tutorial": "Tutoriel",
-	"tab.settings": "Paramètres",
-	"tab.about": "À propos",
-	"modlist.label": "Ceci est la liste des mods pour le jeu.",
-	"createmod.label": "Cette interface servira à assembler facilement un mod.",
-	"tutorial.label": "Ceci est le tutoriel pour utiliser cette application.",
-	"settings.language": "Langue",
-	"settings.apply": "Appliquer",
-	"tab.about.createdby_text": "Application développée par John Trent (@johntrent018).",
-	"tab.about.createdby_link": "https://github.com/johntrent018/toystory2_modmanager",
-	"tab.about.thanksDiscord_text": "Remerciements spéciaux à la communauté Toy Story 2 sur Discord.",
-	"tab.about.thanksDiscord_link": "https://discord.gg/qfUHgT73FS",
-	"tab.about.license_text": "Licence publique GNU GPL v3",
-	"tab.about.license_description": "Vous êtes libre de distribuer toute version modifiée de cette application peu importe l'usage commercial ou non mais si vous le faites, votre version modifiée doit elle-même conserver la licence GNU GPL v3 dans le but de continuer à faire vivre les libertés informatiques (principe essentiel du copyleft). Plus d'informations sur ce site :",
-	"tab.about.license_link": "https://www.gnu.org/licenses/gpl-3.0.fr.html",
-	"levels_name_1": "La maison d'Andy",
-	"levels_name_2": "Le quartier d'Andy",
-	"levels_name_3": "Bombardement",
-	"levels_name_4": "Le chantier",
-	"levels_name_5": "Ruelles et caniveaux",
-	"levels_name_6": "Ça glisse !",
-	"levels_name_7": "La ferme aux jouets d'Al",
-	"levels_name_8": "Spatioland d'Al",
-	"levels_name_9": "Rencontre dans la ferme aux jouets",
-	"levels_name_10": "On décolle dans l'ascenseur",
-	"levels_name_11": "Le grenier d'Al",
-	"levels_name_12": "L'infame empereur Zurg",
-	"levels_name_13": "Infiltration à l'aéroport",
-	"levels_name_14": "Rodéo routier",
-	"levels_name_15": "Affrontement final"
+    "meta": {
+        "code": "fr-FR",
+        "name": {
+            "fr-FR": "Français",
+            "en-GB": "French",
+            "de-DE": "Franzözisch"
+        }
+    },
+    "game_data": {
+        "levels_names": [
+            "La maison d'Andy",
+            "Le quartier d'Andy",
+            "Bombardement",
+            "Le chantier",
+            "Ruelles et caniveaux",
+            "Ça glisse !",
+            "La ferme aux jouets d'Al",
+            "Spatioland d'Al",
+            "Rencontre dans la ferme aux jouets",
+            "On décolle dans l'ascenseur",
+            "Le grenier d'Al",
+            "L'infame empereur Zurg",
+            "Infiltration à l'aéroport",
+            "Rodéo routier",
+            "Affrontement final"
+        ]
+    },
+    "app_data": {
+        "app_title": "Gestionnaire de mods pour Toy Story 2 (PC)",
+        "widgets_terms": {
+            "apply_btn": "Appliquer",
+            "upload_btn": "Téléverser un fichier"
+        },
+        "tabs": {
+            "mods_list": {
+                "tab_title": "Liste des mods",
+                "sub_tabs": {
+                    "ngn": {
+                        "tab_title": "Niveaux NGN",
+                        "h1": "Activer ou désactiver des mods de niveaux NGN"
+                    },
+                    "music_sfx": {
+                        "tab_title": "Musiques et SFX",
+                        "h1": "Activer ou désactiver des mods de musiques, sons et effets spéciaux"
+                    }
+                }
+            },
+            "create_mod": {
+                "tab_title": "Créer un mod",
+                "sub_tabs": {
+                    "ngn": {
+                        "tab_title": "Niveaux NGN",
+                        "h1": "Créer des mods de niveaux NGN"
+                    },
+                    "music_sfx": {
+                        "tab_title": "Musiques et SFX",
+                        "infosMod_label": "Saisissez les informations de base de votre mod :",
+                        "inputName_label": "Nom :",
+                        "inputAuthor_label": "Auteur :",
+                        "inputDescription_label": "Description :",
+                        "fichiersMod_label": "Cliquez sur le bouton associé à un niveau pour uploader la musique personnalisée (au moins un niveau, format .wav obligatoire) :",
+                        "createMod_btn": "Créer le mod"
+                    }
+                }
+            },
+            "help_tuto": {
+                "tab_title": "Aide et tutoriel",
+                "h1": "Ceci est le tutoriel pour utiliser cette application."
+            },
+            "settings": {
+                "tab_title": "Paramètres",
+                "chooseLang_label": "Langue :"
+            },
+            "about": {
+                "tab_title": "À propos",
+                "createdBy_label": "Application développée par John Trent (@johntrent018).",
+                "createdBy_link": "https://github.com/johntrent018/toystory2_modmanager",
+                "thanksDiscord_label": "Remerciements spéciaux à la communauté Toy Story 2 sur Discord.",
+                "thanksDiscord_link": "https://discord.gg/qfUHgT73FS",
+                "licenseName_label": "Licence publique GNU GPL v3",
+                "licenseDescription_label": "Remarque : cette licence s'applique uniquement au code source de cette application et non aux fichiers de mods eux-mêmes, ni aux fichiers du jeu Toy Story 2 original. Vous êtes libre de distribuer toute version modifiée de cette application (en d'autres termes, son code source), quelle que soit son utilisation commerciale, mais si vous le faites, votre version modifiée doit elle-même conserver la licence GNU GPL v3 afin de continuer à respecter les libertés informatiques (c'est le principe essentiel du copyleft). Vous trouverez plus d'informations sur cette licence sur ce site web :",
+                "license_link": "https://www.gnu.org/licenses/gpl-3.0.fr.html"
+
+            }
+        }
+    }
 }

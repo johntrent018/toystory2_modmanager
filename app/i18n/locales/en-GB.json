@@ -1,53 +1,88 @@
 {
-	"meta": {
-		"code": "en-GB",
-		"name": {
-			"fr-FR": "Anglais",
-			"en-GB": "English",
-			"de-DE": "Englisch"
-		}
-	},
-	"app.title": "Mod manager for Toy Story 2 (PC)",
-	"tab.modlist": "Mods list",
-	"tab.createmod": "Create a mod",
-	"tab.createmod.ngn_levels": "NGN Levels",
-	"tab.createmod.ngn_levels.label": "NGN level mod creation interface",
-	"tab.createmod.music_sfx": "Music / Sounds",
-	"tab.createmod.music_sfx.label": "Interface for creating music and SFX mods",
-	"tab.createmod.music_sfx.infosLabel": "Enter the basic information about your mod:",
-	"tab.createmod.music_sfx.enterModName": "Name :",
-	"tab.createmod.music_sfx.enterModAuthor": "Author :",
-	"tab.createmod.music_sfx.enterModDescription": "Description :",
-	"tab.createmod.music_sfx.fichiersLabel": "Click on the button associated with a level to upload custom music (at least one level, .wav format required):",
-	"tab.createmod.music_sfx.createmodBtn": "Create the mod",
-	"tab.tutorial": "Help and tutorial",
-	"tab.settings": "Settings",
-	"tab.about": "About this app",
-	"modlist.label": "This is the list of mods for the game.",
-	"createmod.label": "This interface will be used to easily assemble a mod.",
-	"tutorial.label": "This is the tutorial for using this application.",
-	"settings.language": "Language",
-	"settings.apply": "Apply",
-	"tab.about.createdby_text": "Application developed by John Trent (@johntrent018).",
-	"tab.about.createdby_link": "https://github.com/johntrent018/toystory2_modmanager",
-	"tab.about.thanksDiscord_text": "Special thanks to the Toy Story 2 Discord community.",
-	"tab.about.thanksDiscord_link": "https://discord.gg/qfUHgT73FS",
-	"tab.about.license_text": "Public license GNU GPL v3",
-	"tab.about.license_description": "You are free to distribute any modified version of this application, regardless of commercial use, but if you do so, your modified version must itself retain the GNU GPL v3 licence in order to continue to uphold computer freedoms (an essential principle of copyleft). More information is available on this website:",
-	"tab.about.license_link": "https://www.gnu.org/licenses/gpl-3.0.en.html",
-	"levels_name_1": "Andy's House",
-	"levels_name_2": "Andy's Neighbourhood",
-	"levels_name_3": "Bombs away",
-	"levels_name_4": "Construction Yard",
-	"levels_name_5": "Alleys and gullies",
-	"levels_name_6": "Slime Time",
-	"levels_name_7": "Al's Toy Barn",
-	"levels_name_8": "Al's Spaceland",
-	"levels_name_9": "Toy Barn Encounter",
-	"levels_name_10": "Elevator Hop",
-	"levels_name_11": "Al's Penthouse",
-	"levels_name_12": "The evil emperor Zurg",
-	"levels_name_13": "Airport Infiltration",
-	"levels_name_14": "Tarmac Trouble",
-	"levels_name_15": "Final Showdown"
+    "meta": {
+        "code": "en-GB",
+        "name": {
+            "fr-FR": "Anglais",
+            "en-GB": "English",
+            "de-DE": "Englisch"
+        }
+    },
+    "game_data": {
+        "levels_names": [
+            "Andy's House",
+            "Andy's Neighbourhood",
+            "Bombs away",
+            "Construction yard",
+            "Alleys and gullies",
+            "Slime Time",
+            "Al's Toy Barn",
+            "Al's Spaceland",
+            "Toy Barn Encounter",
+            "Elevator Hop",
+            "Al's Penthouse",
+            "The evil emperor Zurg",
+            "Airport Infiltration",
+            "Tarmac Trouble",
+            "Final Showdown"
+        ]
+    },
+    "app_data": {
+        "app_title": "Mod manager for Toy Story 2 (PC)",
+        "widgets_terms": {
+            "apply_btn": "Apply",
+            "upload_btn": "Upload a file"
+        },
+        "tabs": {
+            "mods_list": {
+                "tab_title": "Mods list",
+                "sub_tabs": {
+                    "ngn": {
+                        "tab_title": "NGN Levels",
+                        "h1": "Enable or disable NGN levels mods"
+                    },
+                    "music_sfx": {
+                        "tab_title": "Songs and SFX",
+                        "h1": "Enable or disable mods related to songs, sounds and audio effects."
+                    }
+                }
+            },
+            "create_mod": {
+                "tab_title": "Create a mod",
+                "sub_tabs": {
+                    "ngn": {
+                        "tab_title": "NGN Levels",
+                        "h1": "Create NGN Levels mods"
+                    },
+                    "music_sfx": {
+                        "tab_title": "Songs and SFX",
+                        "infosMod_label": "Enter the basic informations for the mod :",
+                        "inputName_label": "Name :",
+                        "inputAuthor_label": "Author :",
+                        "inputDescription_label": "Description :",
+                        "fichiersMod_label": "Click on the button associated with a level to upload custom music (at least one level, .wav format required):",
+                        "createMod_btn": "Create the mod"
+                    }
+                }
+            },
+            "help_tuto": {
+                "tab_title": "Help and tutorial",
+                "h1": "This is the tutorial page to teach you how to use this application."
+            },
+            "settings": {
+                "tab_title": "Settings",
+                "chooseLang_label": "Language :"
+            },
+            "about": {
+                "tab_title": "About the app",
+                "createdBy_label": "Application developed by John Trent (@johntrent018).",
+                "createdBy_link": "https://github.com/johntrent018/toystory2_modmanager",
+                "thanksDiscord_label": "Special thanks to the Toy Story 2 Discord community, without whom I would not have been able to create this tool, thanks to their past reverse engineering work, the development of their own tools, and the sharing of their knowledge.",
+                "thanksDiscord_link": "https://discord.gg/qfUHgT73FS",
+                "licenseName_label": "Public license GNU GPL v3",
+                "licenseDescription_label": "Please note: this licence only applies to the source code of this application and not to the mods files themselves, nor to the files from the original Toy Story 2 game. You are free to distribute any modified version of this application (in other words, its source code), regardless of commercial use, but if you do so, your modified version must itself retain the GNU GPL v3 licence in order to continue to uphold computer freedoms (an essential principle of copyleft). More information about this license is available on this website:",
+                "license_link": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+
+            }
+        }
+    }
 }
