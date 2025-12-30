@@ -30,7 +30,8 @@
         "app_title": "Mod manager for Toy Story 2 (PC)",
         "widgets_terms": {
             "apply_btn": "Apply",
-            "upload_btn": "Upload a file"
+            "upload_btn": "Upload a file",
+            "browse_btn": "Browse"
         },
         "tabs": {
             "mods_list": {
@@ -70,6 +71,27 @@
             },
             "settings": {
                 "tab_title": "Settings",
+                "selectGamePath_btn": "Find the 'toy2.exe' file",
+                "selectGamePath_modal": {
+                    "modal_title": "Select the 'toy2.exe' file",
+                    "messages_on_opening": {
+                        "success": {
+                            "game_path_saved": "Game's path successfully saved"
+                        },
+                        "titles": {
+                            "error": "Error",
+                            "success": "Success",
+                            "warning": "Warning"
+                        },
+                        "descriptions": {
+                            "select_exe": "Please select the toy2.exe file.",
+                            "audio_missing": "The “audio” file cannot be found.",
+                            "data_missing": "Le dossier 'data' est introuvable",
+                            "sfx_missing": "The “data” folder cannot be found.",
+                            "invalid_game_path": "The game's path is not valid."
+                        }
+                    }
+                },
                 "chooseLang_label": "Language :"
             },
             "about": {

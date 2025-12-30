@@ -30,7 +30,8 @@
         "app_title": "Gestionnaire de mods pour Toy Story 2 (PC)",
         "widgets_terms": {
             "apply_btn": "Appliquer",
-            "upload_btn": "Téléverser un fichier"
+            "upload_btn": "Téléverser un fichier",
+            "browse_btn": "Naviguer"
         },
         "tabs": {
             "mods_list": {
@@ -70,6 +71,27 @@
             },
             "settings": {
                 "tab_title": "Paramètres",
+                "selectGamePath_btn": "Trouver le fichier 'toy2.exe'",
+                "selectGamePath_modal": {
+                    "modal_title": "Sélectionnez le fichier 'toy2.exe'",
+                    "messages_on_opening": {
+                        "success": {
+                            "game_path_saved": "Chemin du jeu enregistré avec succès"
+                        },
+                        "titles": {
+                            "error": "Erreur",
+                            "success": "Succès",
+                            "warning": "Attention"
+                        },
+                        "descriptions": {
+                            "select_exe": "Veuillez sélectionner le fichier toy2.exe",
+                            "audio_missing": "Le dossier 'audio' est introuvable",
+                            "data_missing": "Le dossier 'data' est introuvable",
+                            "sfx_missing": "Le dossier 'data/sfx' est introuvable",
+                            "invalid_game_path": "Le chemin du jeu est invalide"
+                        }
+                    }
+                },
                 "chooseLang_label": "Langue :"
             },
             "about": {
@@ -81,7 +103,6 @@
                 "licenseName_label": "Licence publique GNU GPL v3",
                 "licenseDescription_label": "Remarque : cette licence s'applique uniquement au code source de cette application et non aux fichiers de mods eux-mêmes, ni aux fichiers du jeu Toy Story 2 original. Vous êtes libre de distribuer toute version modifiée de cette application (en d'autres termes, son code source), quelle que soit son utilisation commerciale, mais si vous le faites, votre version modifiée doit elle-même conserver la licence GNU GPL v3 afin de continuer à respecter les libertés informatiques (c'est le principe essentiel du copyleft). Vous trouverez plus d'informations sur cette licence sur ce site web :",
                 "license_link": "https://www.gnu.org/licenses/gpl-3.0.fr.html"
-
             }
         }
     }

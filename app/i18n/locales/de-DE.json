@@ -30,7 +30,8 @@
         "app_title": "Mod-Manager für Toy Story 2 (PC)",
         "widgets_terms": {
             "apply_btn": "Anwenden",
-            "upload_btn": "Datei hochladen"
+            "upload_btn": "Datei hochladen",
+            "browse_btn": "Navigieren"
         },
         "tabs": {
             "mods_list": {
@@ -70,6 +71,27 @@
             },
             "settings": {
                 "tab_title": "Einstellungen",
+                "selectGamePath_btn": "Die Datei 'toy2.exe' finden",
+                "selectGamePath_modal": {
+                    "modal_title": "Wählen Sie die Datei „toy2.exe” aus.",
+                    "messages_on_opening": {
+                        "success": {
+                            "game_path_saved": "Chemin du jeu enregistré avec succès"
+                        },
+                        "titles": {
+                            "error": "Fehler",
+                            "success": "Erfolg",
+                            "warning": "Achtung"
+                        },
+                        "descriptions": {
+                            "select_exe": "Bitte wählen Sie die Datei toy2.exe aus.",
+                            "audio_missing": "Der Ordner „Audio“ ist nicht auffindbar.",
+                            "data_missing": "Der Ordner „data“ wurde nicht gefunden.",
+                            "sfx_missing": "Der Ordner „data/sfx” wurde nicht gefunden.",
+                            "invalid_game_path": "Der Spielpfad ist ungültig."
+                        }
+                    }
+                },
                 "chooseLang_label": "Sprache:"
             },
             "about": {
