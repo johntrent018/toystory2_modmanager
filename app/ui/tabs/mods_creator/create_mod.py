@@ -2,7 +2,7 @@
 import tkinter as tk
 from tkinter import ttk
 # Importation de composants
-from preferences import Preferences
+from app.core.preferences import Preferences
 from app.ui.tabs.mods_creator.create_ngn_mod import CreateNGNModTab
 from app.ui.tabs.mods_creator.create_music_sfx_mod import CreateMusicModTab
 

@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from preferences import Preferences
+from app.core.preferences import Preferences
 
 class ModListTab(ttk.Frame):
     def __init__(self, parent, lang):

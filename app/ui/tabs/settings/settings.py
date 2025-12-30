@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 import os
 # Importation de composants
-from preferences import Preferences
+from app.core.preferences import Preferences
 
 class SettingsTab(ttk.Frame):
 

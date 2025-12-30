@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import ttk, font
 import webbrowser
 # Importation de composants
-from preferences import Preferences
+from app.core.preferences import Preferences
 
 class AboutTab(ttk.Frame):
 

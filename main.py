@@ -1,5 +1,5 @@
 # Importations de composants
-from preferences import Preferences
+from app.core.preferences import Preferences
 from app.i18n.manager import LanguageManager
 from app.ui.app import App
 # Importations tierces
