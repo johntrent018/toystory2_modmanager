@@ -1,5 +1,6 @@
 # Importations de composants
 from app.core.preferences import Preferences
+from app.core.game_path import GamePath_Manager
 from app.i18n.manager import LanguageManager
 from app.ui.app import App
 # Importations tierces
@@ -32,6 +33,9 @@ if __name__ == "__main__":
     else:
         lang_manager.set_language(DEFAULT_LANG)
 
+    # On initialise le contrôleur du chemin du jeu
+    game_path_manager = GamePath_Manager(prefs)
+
     # On lance l'application en boucle
-    app = App(lang_manager, prefs)
+    app = App(lang_manager, prefs, game_path_manager)
     app.mainloop()

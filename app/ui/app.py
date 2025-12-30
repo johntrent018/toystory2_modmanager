@@ -13,13 +13,14 @@ from app.utils.helpers import resource_path
 class App(tk.Tk):
 
     # Constructeur
-    def __init__(self, lang, prefs):
+    def __init__(self, lang, prefs, game_path_manager):
 
         super().__init__()
 
         # Stockage des dépendances (préférences) pour transmission en aval
         self.lang = lang
         self.prefs = prefs
+        self.game_path_manager = game_path_manager
 
         # On donne à la fenêtre l'icône du jeu.
         # Si on n'y arrive pas pour une quelconque raison, on laisse l'icône par défaut Tkinter.
