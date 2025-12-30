@@ -1,6 +1,5 @@
 ## Importations de base
-import sys
-import os
+import sys, os
 
 def resource_path(relative_path):
 

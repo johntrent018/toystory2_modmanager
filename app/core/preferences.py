@@ -1,5 +1,5 @@
-import json
-import os
+# Importations de base
+import json, os
 
 class Preferences:
 
