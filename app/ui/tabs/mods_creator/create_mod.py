@@ -3,8 +3,8 @@ import tkinter as tk
 from tkinter import ttk
 # Importation de composants
 from preferences import Preferences
-from app.ui.tab_createmod_ngn import CreateNGNModTab
-from app.ui.tab_createmod_music import CreateMusicModTab
+from app.ui.tabs.mods_creator.create_ngn_mod import CreateNGNModTab
+from app.ui.tabs.mods_creator.create_music_sfx_mod import CreateMusicModTab
 
 class CreateModTab(ttk.Frame):
 

@@ -2,11 +2,11 @@
 import tkinter as tk
 from tkinter import ttk
 # Importation de composants
-from app.ui.tab_modlist import ModListTab
-from app.ui.tab_createmod import CreateModTab
-from app.ui.tab_help import HelpTab
-from app.ui.tab_settings import SettingsTab
-from app.ui.tab_about import AboutTab
+from app.ui.tabs.mods_manager.mods_list import ModListTab
+from app.ui.tabs.mods_creator.create_mod import CreateModTab
+from app.ui.tabs.help_tutorial.tab_help import HelpTab
+from app.ui.tabs.settings.settings import SettingsTab
+from app.ui.tabs.about.about import AboutTab
 # Importations tierces
 from app.utils.helpers import resource_path
 
