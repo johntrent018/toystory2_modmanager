@@ -17,7 +17,7 @@ class App(tk.Tk):
 
         super().__init__()
 
-        # Stockage des dépendances (préférences) pour transmission en aval
+        # Stockage des dépendances pour transmission en aval
         self.lang = lang
         self.prefs = prefs
         self.game_path_manager = game_path_manager
