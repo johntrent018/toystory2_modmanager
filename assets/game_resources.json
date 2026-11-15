@@ -1,0 +1,85 @@
+{
+    "levels": {
+        "1": "data/level01/level.ngn",
+        "2": "data/level02/level.ngn",
+        "3": "data/level06/level.ngn",
+        "4": "data/level04/level.ngn",
+        "5": "data/level05/level.ngn",
+        "6": "data/level03/level.ngn",
+        "7": "data/level07/level.ngn",
+        "8": "data/level08/level.ngn",
+        "9": "data/level09/level.ngn",
+        "10": "data/level10/level.ngn",
+        "11": "data/level01/level1.ngn",
+        "12": "data/level02/level1.ngn",
+        "13": "data/level03/level1.ngn",
+        "14": "data/level04/level1.ngn",
+        "15": "data/level05/level1.ngn"
+    },
+    "bgm": {
+        "levels": {
+            "1": "audio/fullhouse.wav",
+            "2": "audio/neighbou.wav",
+            "3": "audio/buzvred.wav",
+            "4": "audio/constr.wav",
+            "5": "audio/alley.wav",
+            "6": "audio/slime.wav",
+            "7": "audio/als_toyb.wav",
+            "8": "audio/spacelnd.wav",
+            "9": "audio/buzvbuz.wav",
+            "10": "audio/elev.wav",
+            "11": "audio/als_pent.wav",
+            "12": "audio/buzvzurg.wav",
+            "13": "audio/convey.wav",
+            "14": "audio/tarmac.wav",
+            "15": "audio/buzvpros.wav"
+        },
+        "others": {
+            "credits": "audio/complete.wav",
+            "level_complete": "audio/levcomp.wav",
+            "miniboss": "audio/miniboss.wav",
+            "race": "audio/minirace.wav",
+            "gameover": "audio/over.wav",
+            "titlescreen": "audio/titlescr.wav",
+            "menus": "audio/ygafim.wav"
+        }
+    },
+    "sfx": {
+    },
+    "cutscenes": {
+        "intro": {
+            "logo_activision": "rtlibs/acti.dll",
+            "logo_disney_interactive": "rtlibs/dlogo.dll",
+            "travellers_tales": "rtlibs/tt.dll",
+            "pixar_aliens_ts2": "rtlibs/1st trailer.dll"
+        },
+        "movie_bits": {
+            "al_stealing_woody": "rtlibs/l 01 in.dll",
+            "toy_gang_leaves_house": "rtlibs/l 02 in.dll",
+            "rex_playing_game": "rtlibs/l 03 in.dll",
+            "toy_gang_across_street_night": "rtlibs/l 04 in.dll",
+            "woody_meets_jesse": "rtlibs/l 05 in.dll",
+            "road_accident": "rtlibs/l 06 in.dll",
+            "toy_gang_enters_atb": "rtlibs/l 07 in.dll",
+            "buzz_meets_buzz": "rtlibs/l 08 in.dll",
+            "buzz_leaves_atb_zurg": "rtlibs/l 09 in.dll",
+            "toy_gang_climb_elevator": "rtlibs/l 10 in.dll",
+            "woody_playing_with_jesse": "rtlibs/l 11 in.dll",
+            "buzz_drives_car": "rtlibs/l 12 bo.dll",
+            "zurg_confronts_buzz": "rtlibs/l 12 in.dll",
+            "toy_gang_enters_airport": "rtlibs/l 13 in.dll",
+            "saving_jesse": "rtlibs/l 14 in.dll",
+            "stinky_pete_defeated": "rtlibs/l 15 bo 1.dll",
+            "jumping_off_plane": "rtlibs/l 15 bo 2.dll",
+            "happy_ending": "rtlibs/end 01.dll"
+        }
+    },
+    "screens": {
+        "intro_choose_resolution": "data/pcbits/rezsel.BMP",
+        "bonus_movie_awarded": "data/gfx/bonus.ngn",
+        "boss_defeated": "data/gfx/boss.ngn",
+        "congrats_50tokens": "data/gfx/congrats.ngn",
+        "game_won": "data/gfx/gamewin.ngn",
+        "loading": "data/gfx/loading.ngn"
+    }
+}

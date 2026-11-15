@@ -1,37 +1,50 @@
-# Importations de composants
-from preferences import Preferences
-from app.i18n.manager import LanguageManager
-from app.ui.app import App
-# Importations tierces
-from app.utils.helpers import resource_path
-# import pprint
+"""Point d'entrée du gestionnaire de mods. / Mod manager entry point.
 
-# Définition de la langue par défaut
-DEFAULT_LANG = "en-GB"
+Lancement : python main.py
+"""
+from __future__ import annotations
 
-# Boucle principale de l'application
+import tkinter as tk
+
+from app.app_paths import get_app_dir
+from app.controllers.create_mod_controller import CreateModController
+from app.controllers.mod_list_controller import ModListController
+from app.controllers.settings_controller import SettingsController
+from app.event_bus import EventBus
+from app.game_path_manager import GamePath_Manager
+from app.language_manager import LanguageManager
+from app.models.mod_activator import ModActivator
+from app.models.mod_repository import ModRepository
+from app.preferences import Preferences
+from app.views.app_icon import apply_app_icon
+from app.views.main_window import MainWindow
+
+def main() -> None:
+    """Assemble les composants (modèles → contrôleurs → vues). / Wire everything together."""
+    app_dir = get_app_dir()
+    logging.debug(app_dir)
+
+    # --- Services partagés
+    bus = EventBus()
+    preferences = Preferences(app_dir / "preferences.json")
+    lang = LanguageManager(preferences, bus)
+    game_path_manager = GamePath_Manager(preferences, bus)
+
+    # --- Modèles
+    repository = ModRepository(app_dir / "mods")
+    activator = ModActivator(repository, game_path_manager, bus)
+
+    # --- Contrôleurs
+    list_controller = ModListController(repository, activator, game_path_manager, bus, lang)
+    create_controller = CreateModController(repository, activator, bus, lang)
+    settings_controller = SettingsController(game_path_manager, lang)
+
+    # --- Vues
+    root = tk.Tk()
+    apply_app_icon(root)  # icône de l'appli (repli : plume Tk par défaut)
+    MainWindow(root, lang, bus, list_controller, create_controller, settings_controller)
+    root.mainloop()
+
+
 if __name__ == "__main__":
-
-    # On initialise le contrôleur des préférences
-    prefs = Preferences()
-
-    # On initialise le contrôleur des langues
-    lang_manager = LanguageManager(
-        locales_path=resource_path("app/i18n/locales"),
-        default_lang=DEFAULT_LANG
-    )
-
-    # On récupère la langue enregistrée dans les préférences
-    saved_lang = prefs.get("language")
-
-    # Si la langue enregistrée dans les préférences existe bien en tant que fichier xx-YY.json
-    # dans le dossier i18n/locales, alors on en fait la langue à utiliser. Sinon, on utilise la
-    # langue par défaut (prise en charge d'une potentielle faille : non-existence d'un fichier de langue).
-    if saved_lang in lang_manager.available_languages():
-        lang_manager.set_language(saved_lang)
-    else:
-        lang_manager.set_language(DEFAULT_LANG)
-
-    # On lance l'application en boucle
-    app = App(lang_manager, prefs)
-    app.mainloop()
+    main()
