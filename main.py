@@ -22,7 +22,6 @@ from app.views.main_window import MainWindow
 def main() -> None:
     """Assemble les composants (modèles → contrôleurs → vues). / Wire everything together."""
     app_dir = get_app_dir()
-    logging.debug(app_dir)
 
     # --- Services partagés
     bus = EventBus()
