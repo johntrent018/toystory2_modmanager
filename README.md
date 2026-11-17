@@ -3,10 +3,7 @@
   Toy Story 2 PC - Mod Manager
 </h1>
 
-<img src="https://img.shields.io/badge/Version-1.5.4-blue" height="25">
-<img src="https://img.shields.io/badge/License-GNU GPL v3-c00002?logo=gplv3&logoColor=ffffff" height="25">
-<br>
-<img src="https://img.shields.io/badge/Special thanks-Toy Story 2 Speedrunning and Modding Community-5865f2?logo=discord&logoColor=fff" href="https://discord.gg/qfUHgT73FS" height="25">
+<img src="https://img.shields.io/badge/Version-1.5.4-blue" height="25"> <img src="https://img.shields.io/badge/License-GNU GPL v3-c00002?logo=gplv3&logoColor=ffffff" height="25"> <img src="https://img.shields.io/badge/Special thanks-Toy Story 2 Speedrunning and Modding Community-5865f2?logo=discord&logoColor=fff" href="https://discord.gg/qfUHgT73FS" height="25">
 
 
 ## About
