@@ -8,7 +8,7 @@
 
 ## About
 
-This mod manager is a simple Python Tkinter interface made to enable and disable easily and quickly mods for the video game "Toy Story 2 : Buzz Lightyear to the Rescue!". This mod manager works with any PC version of the game (standalone or installed on disc). Special thanks to the [Toy Story 2 Speedrunning and Modding community on Discord]([URL](https://discord.gg/qfUHgT73FS) "Click to visit in a new tab") that inspired me to create this application.
+This mod manager is a simple Python Tkinter interface made to enable and disable easily and quickly mods for the video game "Toy Story 2 : Buzz Lightyear to the Rescue!". This mod manager works with any PC version of the game (standalone or installed on disc). Special thanks to the [Toy Story 2 Speedrunning and Modding community on Discord](https://discord.gg/qfUHgT73FS "Click to visit in a new tab") that inspired me to create this application and helped me with the technical knowledge.
 
 ## ⚠️ Warning
 
