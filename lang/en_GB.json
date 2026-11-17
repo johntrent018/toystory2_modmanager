@@ -180,18 +180,25 @@
     "ok": "Confirm",
     "cancel": "Cancel"
   },
+  
   "help": {
     "info_title": "Information",
-    "info_1": "Point no. 1",
-    "info_2": "Point no. 2",
-    "info_3": "Point no. 3",
-    "faq_title": "FAQ",
-    "q1": "Question 1",
-    "a1": "Answer 1",
-    "q2": "Question 2",
-    "a2": "Answer 2",
-    "q3": "Question 3",
-    "a3": "Answer 3"
+    "info_1": "To create a mod, go to the \"Create a mod\" tab and fill in at least the required information (marked with an asterisk) in the \"Information\" section. It is not compulsory to include screenshots showing how the mod affects the game, but it is strongly recommended. Once the mod has been created, it will appear in the list on the left-hand side of the \"Mod List\" tab.",
+    "info_2": "Regardless of your preferred language for the application interface, you can enter a translation of the information into another language when creating or editing a mod. To do this, simply change the language in the drop-down list labelled \"Content language\" on the \"Create a mod\" tab. A language file is then created in memory for this mod, and the \"Mod name\", \"Description\" and \"Warning\" fields are cleared so that you can enter the information for this new language. This allows you to translate into as many languages as you like in one go, without having to click \"Save changes\" at the bottom of the window after each language, as the application keeps your temporary changes in memory until you confirm or cancel them.",
+    "info_3": "To enable or disable a mod, you can click the button in the top right-hand corner of the \"Mod List\" tab, where the mod’s description is displayed. You can also double-click the mod in the list on the left. When a mod is enabled, the indicator next to its name changes from red to green.",
+    "info_4": "To edit a mod, click on the pencil icon next to its name in the list on the left-hand side of the \"List of mods\" tab. You will then be taken back to the \"Create a mod\" screen, but this time in Edit mode, as indicated by the blue message at the top of the tab. You can carry out exactly the same actions as when creating a mod.",
+    "info_5": "To delete a mod, click on the bin icon next to the pencil. A pop-up window will then ask you to confirm. There is no hidden backup of deleted mods, so please be sure you want to delete a mod.",
+    "faq_title": "Questions",
+    "q1": "Does this app replace ToyTwoToolbox?",
+    "a1": "No, and that’s not the point. ToyTwoToolbox is used to modify the contents of NGN files, whether they be textures, 3D models or other data. Apart from certain in-game resources that can be modified without altering the NGN files, you still need to edit the NGN files using ToyTwoToolbox in order to upload them to that application afterwards. However, I’ve realised over time that, for certain resources that need modifying, there’s only one texture to change across several NGN files. So, I’m actively working on learning how to parse the contents of an NGN file so that, for those resources, I’ll only need to upload a single texture. Consequently, in the long run, the Mod Manager will be able to do things that ToyTwoToolbox cannot and will be able to replace ToyTwoToolbox for certain basic NGN file editing tasks; however, ToyTwoToolbox remains more suitable for working on more complex data modifications.",
+    "q2": "Do mods created using this app work with an unrestricted version of the toy2.exe file?",
+    "a2": "Just to recap, by \"unrestricted\" I mean a toy2.exe file that has been modified to bypass the low-resolution limit on textures. For the time being, if you have an \"unrestricted\" toy2.exe, there’s no problem as the Mod Manager only replaces NGN files when it comes to textures. However, the Mod Manager is currently being equipped with a conflict manager that will handle textures, so it will, of course, need to automatically detect whether a modded texture is a high-resolution texture intended for \"unrestricted\" toy2.exe files. If so, it will need to check whether the player has an \"unrestricted\" version of the game so that they can install the mods in question. This check will be carried out automatically without the player having to take any manual action.",
+    "q3": "Is it possible to download mods from a linked remote server?",
+    "a3": "Pas pour le moment et je ne pense pas que ce soit pertinent pour l'instant, en plus d'être coûteux en termes de développement. Il faudra se contenter de créer soi-même les mods compressés en .zip via l'application et les importer et les exporter manuellement. Cependant, l'idée d'une \"Marketplace\" de mods reste intéressante pour pousser encore plus loin l'adoption des mods par le grand public.",
+    "q4": "Do I have to translate my mod into the other languages supported by the app?",
+    "a4": "You’re under no obligation to do so, but it’s a small effort that helps to enrich the game’s fan community. If you don’t want to translate into all the languages supported by the app, you can limit yourself to translating into English, if that isn’t your first language. English is the app’s default language, so if a mod is available in English but not in the language you’ve chosen in the settings, that mod will be displayed in English by default. If you’re having trouble translating into a particular language, I’d highly recommend the excellent online translator DeepL (https://www.deepl.com).",
+    "q5": "I’m having a problem with the app – how do I report it?",
+    "a5": "You can open a ticket directly on the app’s GitHub page or send me a message on the community’s Discord server. The links are available in the \"About\" tab."
   },
   "about": {
     "developed_by": "Application developed by {author} ({handle}).",
