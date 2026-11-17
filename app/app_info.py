@@ -1,4 +1,4 @@
-APP_VERSION = "1.5.4"
+APP_VERSION = "1.5.9"
 AUTHOR_NAME = "John Trent"
 AUTHOR_HANDLE = "@johntrent018"
 REPO_URL = "https://github.com/johntrent018/toystory2_modmanager"
