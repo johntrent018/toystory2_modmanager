@@ -8,11 +8,11 @@
 
 ## About
 
-This mod manager is a simple Python Tkinter interface made to enable and disable easily and quickly mods for the video game "Toy Story 2 : Buzz Lightyear to the Rescue!". This mod manager works with any PC version of the game (standalone or installed on disc).
+This mod manager is a simple Python Tkinter interface made to enable and disable easily and quickly mods for the video game "Toy Story 2 : Buzz Lightyear to the Rescue!". This mod manager works with any PC version of the game (standalone or installed on disc). Special thanks to the [Toy Story 2 Speedrunning and Modding community on Discord]([URL](https://discord.gg/qfUHgT73FS) "Click to visit in a new tab") that inspired me to create this application.
 
 ## ⚠️ Warning
 
-As regards level mods, this app is not designed to create mods but to manage them easily. To create level mods (modified NGN files), you will first need to use the [ToyTwoToolbox app](https://github.com/EpicMinecartz/ToyTwoToolbox/releases). This app is therefore not intended to replace the ToyTwoToolbox app at this stage.
+As regards level mods, this app is not designed to create mods but to manage them easily. To create level mods (modified NGN files), you will first need to use the [ToyTwoToolbox app](https://github.com/EpicMinecartz/ToyTwoToolbox/releases "Click to visit in a new tab"). This app is therefore not intended to replace the ToyTwoToolbox app at this stage.
 
 ## Features
 
@@ -61,7 +61,7 @@ The executable application will be generated in a `dist` folder, and the `prefer
 
 You can switch the interface's language by going in the settings tab and choosing your language from the language option's dropdown list. The language shift is instant and doesn't need to restart the app. The supported language (for now 😉) are French and English. 
 
-The language setting in this application is designed with one community objective in mind : make it as easy as possible to implement a new language. This means that the only required thing to get this app to be translated into a new language is a JSON copy of the "en_GB.json" file located in the "lang" folder and renamed as "**xx_YY.json**", according to the international norm [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166) (xx = language code ; YY = country code).
+The language setting in this application is designed with one community objective in mind : make it as easy as possible to implement a new language. This means that the only required thing to get this app to be translated into a new language is a JSON copy of the "en_GB.json" file located in the "lang" folder and renamed as "**xx_YY.json**", according to the international norm [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166 "Click to visit in a new tab") (xx = language code ; YY = country code).
 
 Then you only need to translated all the strings it contains. Really, that's all it takes because the whole application has a language manager that will go search the text strings directly from these languages JSON files.
 
@@ -87,3 +87,7 @@ If the mod creator has not provided a translation in the language you have selec
 ```
 
 The display order of mods is specified in `mods/mod_order.json`, whilst the active mods are listed in `mods/active_mods.json`.
+
+## Software Licence
+
+This application is distributed under the [GNU GPL v3 licence](https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU "Click to visit in a new tab"). You are free to use it, view its source code, modify it and redistribute it as you wish, but the copyleft clause requires that, if you redistribute versions that you have modified using these freedoms, you must publish them under the same GNU GPL v3 licence in order to ensure that these computing freedoms continue to be available to everyone. See the LICENSE file in the root of this repository for further information.
